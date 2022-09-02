@@ -1,7 +1,7 @@
 {
     "nocapes.options": "No Capes Options",
 
-    "nocapes.options.info.relog": "You may need to relog for changes to take effect.",
+    "nocapes.options.info.relog": "You may need to relog if you are in a game for changes to take effect.",
 
     "nocapes.options.category.freecapes": "Free Capes",
     "nocapes.cape.vanilla": "Show Vanilla Cape",
@@ -26,16 +26,20 @@
     "nocapes.cape.mojangstudios.tooltip": "mojangstudios tooltip",
     "nocapes.cape.mojang": "Show Mojang Cape",
     "nocapes.cape.mojang.tooltip": "mojang tooltip",
-    "nocapes.cape.mojangclassic": "Show Mojang Classic Cape",
+    "nocapes.cape.mojangclassic": "Show Mojang (Classic) Cape",
     "nocapes.cape.mojangclassic.tooltip": "mojangclassic tooltip",
 
-    "nocapes.options.category.communityrewardcapes": "Community Reward Capes",
+    "nocapes.options.category.rewardcapes": "Reward Capes",
     "nocapes.cape.scrollschamp": "Show Scrolls Champ Cape",
     "nocapes.cape.scrollschamp.tooltip": "scrollschamp tooltip",
     "nocapes.cape.cobalt": "Show Cobalt Cape",
     "nocapes.cape.cobalt.tooltip": "cobalt tooltip",
-    "nocapes.cape.moderator": "Show Moderator Cape",
-    "nocapes.cape.moderator.tooltip": "moderator tooltip",
+    "nocapes.cape.mojiramoderator": "Show Mojira Moderator Cape",
+    "nocapes.cape.mojiramoderator.tooltip": "mojiramoderator tooltip",
     "nocapes.cape.mapmaker": "Show Map Maker Cape",
-    "nocapes.cape.mapmaker.tooltip": "mapmaker tooltip"
+    "nocapes.cape.mapmaker.tooltip": "mapmaker tooltip",
+    "nocapes.cape.translator": "Show Translator Cape",
+    "nocapes.cape.translator.tooltip": "translator tooltip",
+    "nocapes.cape.translatorchinese": "Show Translator (Chinese) Cape",
+    "nocapes.cape.translatorchinese.tooltip": "translatorchinese tooltip"
 }
