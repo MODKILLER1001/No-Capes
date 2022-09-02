@@ -1,0 +1,10 @@
+{
+    "nocapes.options": "No Capes Options",
+
+    "nocapes.options.info.relog": "You may need to relog for changes to take effect.",
+
+    "nocapes.options.category.general": "General",
+
+    "nocapes.cape.migrator": "Show Migrator Cape",
+    "nocapes.cape.vanilla": "Show Vanilla Cape"
+}

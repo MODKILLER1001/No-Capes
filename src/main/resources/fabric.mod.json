@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "nocapes",
+  "version": "${version}",
+
+  "name": "No Capes",
+  "description": "Removes various capes from Minecraft.",
+  "authors": [
+    "MODKILLER1001"
+  ],
+  "contact": {
+    "sources": "https://github.com/MODKILLER1001/No-Capes"
+  },
+
+  "license": "WTFPL",
+  "icon": "NC_logo.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.modkiller1001.nocapes.NoCapes"
+    ],
+    "modmenu": [
+      "com.modkiller1001.nocapes.config.ModMenuInt"
+    ]
+  },
+  "mixins": [
+    "nocapes.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {},
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.modrinth": "https://modrinth.com/mod/no-capes",
+        "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/no-capes"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.modkiller1001.nocapes.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "MigrationCapeMixin",
+    "VanillaCapeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
