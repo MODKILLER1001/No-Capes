@@ -13,7 +13,7 @@
   },
 
   "license": "WTFPL",
-  "icon": "NC_logo.png",
+  "icon": "nocapeslogo.png",
 
   "environment": "*",
   "entrypoints": {
