@@ -1,7 +1,7 @@
 {
     "nocapes.options": "No Capes Options",
 
-    "nocapes.options.info.relog": "You may need to relog if you are in a game for changes to take effect.",
+    "nocapes.options.info.relog": "You may need to relog if you are ingame for changes to take effect.",
 
     "nocapes.options.category.freecapes": "Free Capes",
     "nocapes.cape.vanilla": "Show Vanilla Cape",
