@@ -2,8 +2,9 @@
 
 A mod to hide capes.
 
-This mod needs [Cloth Config](https://github.com/shedaniel/cloth-config).
-To configure, you need [Mod Menu](https://github.com/TerraformersMC/ModMenu/).
+Hides all specified capes from your view. You can specify if you want to hide each individual cape.
+
+To configure this mod in game, you need [Mod Menu](https://github.com/TerraformersMC/ModMenu/) and [Cloth Config](https://github.com/shedaniel/cloth-config).
 
 ## License
 
