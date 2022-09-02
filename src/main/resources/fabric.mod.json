@@ -9,7 +9,9 @@
     "MODKILLER1001"
   ],
   "contact": {
-    "sources": "https://github.com/MODKILLER1001/No-Capes"
+    "homepage": "https://github.com/MODKILLER1001/No-Capes/blob/master/README.md",
+    "sources": "https://github.com/MODKILLER1001/No-Capes",
+    "issues": "https://github.com/MODKILLER1001/No-Capes/issues"
   },
 
   "license": "WTFPL",
