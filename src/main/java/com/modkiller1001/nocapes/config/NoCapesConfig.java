@@ -18,9 +18,15 @@ public class NoCapesConfig {
         private static final Path CONFIG_FILE = FabricLoader.getInstance().getConfigDir().resolve("NoCapes.json");
         private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
         private static NoCapesConfig INSTANCE;
-        protected boolean vanillaCapeShown = false, migratorCapeShown = false;
-
-        protected static NoCapesConfig getInstance() {
+        protected boolean
+				vanillaCapeShown = true,
+				migratorCapeShown = true,
+				minecon2011CapeShown = true,
+				minecon2012CapeShown = true,
+				minecon2013CapeShown = true,
+				minecon2015CapeShown = true,
+				minecon2016CapeShown = true;
+	protected static NoCapesConfig getInstance() {
             if (INSTANCE == null) {
                 loadConfig();
             }
@@ -78,7 +84,7 @@ public class NoCapesConfig {
     /**
 	 * @return True if vanilla cape should be shown.
 	 *
-	 * This is false by default.
+	 * This is true by default.
 	 */
 
 	public static boolean vanillaCapeShown() {
@@ -88,11 +94,61 @@ public class NoCapesConfig {
 	/**
 	 * @return True if migrator cape should be shown.
 	 *
-	 * This is false by default.
+	 * This is true by default.
 	 */
 
 	public static boolean migratorCapeShown() {
 		return getInstance().migratorCapeShown;
+	}
+
+	/**
+	 * @return True if minecon 2011 cape should be shown.
+	 *
+	 * This is true by default.
+	 */
+
+	public static boolean minecon2011CapeShown() {
+		return getInstance().minecon2011CapeShown;
+	}
+
+	/**
+	 * @return True if minecon 2012 cape should be shown.
+	 *
+	 * This is true by default.
+	 */
+
+	public static boolean minecon2012CapeShown() {
+		return getInstance().minecon2012CapeShown;
+	}
+
+	/**
+	 * @return True if minecon 2013 cape should be shown.
+	 *
+	 * This is true by default.
+	 */
+
+	public static boolean minecon2013CapeShown() {
+		return getInstance().minecon2013CapeShown;
+	}
+
+	/**
+	 * @return True if minecon 2015 cape should be shown.
+	 *
+	 * This is true by default.
+	 */
+
+	public static boolean minecon2015CapeShown() {
+		return getInstance().minecon2015CapeShown;
+	}
+
+	/**
+	 * @return True if minecon 2016 cape should be shown.
+	 *
+	 * This is true by default.
+	 */
+
+	public static boolean minecon2016CapeShown() {
+		return getInstance().minecon2016CapeShown;
 	}
 
 }

@@ -6,8 +6,13 @@
   "mixins": [
   ],
   "client": [
-    "MigrationCapeMixin",
-    "VanillaCapeMixin"
+    "MigratorCapeMixin",
+    "VanillaCapeMixin",
+    "Minecon2011CapeMixin",
+    "Minecon2012CapeMixin",
+    "Minecon2013CapeMixin",
+    "Minecon2015CapeMixin",
+    "Minecon2016CapeMixin"
   ],
   "injectors": {
     "defaultRequire": 1

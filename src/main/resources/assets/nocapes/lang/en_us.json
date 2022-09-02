@@ -3,8 +3,39 @@
 
     "nocapes.options.info.relog": "You may need to relog for changes to take effect.",
 
-    "nocapes.options.category.general": "General",
-
+    "nocapes.options.category.freecapes": "Free Capes",
+    "nocapes.cape.vanilla": "Show Vanilla Cape",
+    "nocapes.cape.vanilla.tooltip": "vanilla tooltip",
     "nocapes.cape.migrator": "Show Migrator Cape",
-    "nocapes.cape.vanilla": "Show Vanilla Cape"
+    "nocapes.cape.migrator.tooltip": "migrator tooltip",
+
+    "nocapes.options.category.mineconcapes": "Minecon Capes",
+    "nocapes.cape.minecon2011": "Show Minecon 2011 Cape",
+    "nocapes.cape.minecon2011.tooltip": "minecon2011 tooltip",
+    "nocapes.cape.minecon2012": "Show Minecon 2012 Cape",
+    "nocapes.cape.minecon2012.tooltip": "minecon2012 tooltip",
+    "nocapes.cape.minecon2013": "Show Minecon 2013 Cape",
+    "nocapes.cape.minecon2013.tooltip": "minecon2013 tooltip",
+    "nocapes.cape.minecon2015": "Show Minecon 2015 Cape",
+    "nocapes.cape.minecon2015.tooltip": "minecon2015 tooltip",
+    "nocapes.cape.minecon2016": "Show Minecon 2016 Cape",
+    "nocapes.cape.minecon2016.tooltip": "minecon2016 tooltip",
+
+    "nocapes.options.category.mojangcapes": "Mojang Capes",
+    "nocapes.cape.mojangstudios": "Show Mojang Studios Cape",
+    "nocapes.cape.mojangstudios.tooltip": "mojangstudios tooltip",
+    "nocapes.cape.mojang": "Show Mojang Cape",
+    "nocapes.cape.mojang.tooltip": "mojang tooltip",
+    "nocapes.cape.mojangclassic": "Show Mojang Classic Cape",
+    "nocapes.cape.mojangclassic.tooltip": "mojangclassic tooltip",
+
+    "nocapes.options.category.communityrewardcapes": "Community Reward Capes",
+    "nocapes.cape.scrollschamp": "Show Scrolls Champ Cape",
+    "nocapes.cape.scrollschamp.tooltip": "scrollschamp tooltip",
+    "nocapes.cape.cobalt": "Show Cobalt Cape",
+    "nocapes.cape.cobalt.tooltip": "cobalt tooltip",
+    "nocapes.cape.moderator": "Show Moderator Cape",
+    "nocapes.cape.moderator.tooltip": "moderator tooltip",
+    "nocapes.cape.mapmaker": "Show Map Maker Cape",
+    "nocapes.cape.mapmaker.tooltip": "mapmaker tooltip"
 }

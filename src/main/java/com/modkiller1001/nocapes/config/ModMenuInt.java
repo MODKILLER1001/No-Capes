@@ -18,21 +18,59 @@ public class ModMenuInt implements ModMenuApi {
 				.setTitle(Component.translatable("nocapes.options"));
 			ConfigEntryBuilder entryBuilder = builder.entryBuilder();
 
-			ConfigCategory general = builder.getOrCreateCategory(Component.translatable("nocapes.options.category.general"));
+			//FREE CAPES SECTION
 
-			general.addEntry(entryBuilder.startTextDescription(Component.translatable("nocapes.options.info.relog")).build());
-			
-			general.addEntry(entryBuilder.startBooleanToggle(
-				Component.translatable("nocapes.cape.vanilla"), NoCapesConfig.getInstance().vanillaCapeShown)
-				.setDefaultValue(false)
-				.setSaveConsumer(newValue -> NoCapesConfig.getInstance().vanillaCapeShown = newValue)
-				.build());
+			ConfigCategory freecapes = builder.getOrCreateCategory(Component.translatable("nocapes.options.category.freecapes"));
 
-			general.addEntry(entryBuilder.startBooleanToggle(
-				Component.translatable("nocapes.cape.migrator"), NoCapesConfig.getInstance().migratorCapeShown)
-				.setDefaultValue(false)
-				.setSaveConsumer(newValue -> NoCapesConfig.getInstance().migratorCapeShown = newValue)
-				.build());
+			freecapes.addEntry(entryBuilder.startTextDescription(Component.translatable("nocapes.options.info.relog")).build());
+
+			freecapes.addEntry(entryBuilder.startBooleanToggle(
+					Component.translatable("nocapes.cape.vanilla"), NoCapesConfig.getInstance().vanillaCapeShown)
+					.setDefaultValue(true)
+					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().vanillaCapeShown = newValue)
+					.build());
+
+			freecapes.addEntry(entryBuilder.startBooleanToggle(
+					Component.translatable("nocapes.cape.migrator"), NoCapesConfig.getInstance().migratorCapeShown)
+					.setDefaultValue(true)
+					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().migratorCapeShown = newValue)
+					.build());
+
+			//MINECON CAPES SECTION
+
+			ConfigCategory mineconcapes = builder.getOrCreateCategory(Component.translatable("nocapes.options.category.mineconcapes"));
+
+			mineconcapes.addEntry(entryBuilder.startTextDescription(Component.translatable("nocapes.options.info.relog")).build());
+
+			mineconcapes.addEntry(entryBuilder.startBooleanToggle(
+					Component.translatable("nocapes.cape.minecon2011"), NoCapesConfig.getInstance().minecon2011CapeShown)
+					.setDefaultValue(true)
+					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().minecon2011CapeShown = newValue)
+					.build());
+
+			mineconcapes.addEntry(entryBuilder.startBooleanToggle(
+					Component.translatable("nocapes.cape.minecon2012"), NoCapesConfig.getInstance().minecon2012CapeShown)
+					.setDefaultValue(true)
+					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().minecon2012CapeShown = newValue)
+					.build());
+
+			mineconcapes.addEntry(entryBuilder.startBooleanToggle(
+					Component.translatable("nocapes.cape.minecon2013"), NoCapesConfig.getInstance().minecon2013CapeShown)
+					.setDefaultValue(true)
+					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().minecon2013CapeShown = newValue)
+					.build());
+
+			mineconcapes.addEntry(entryBuilder.startBooleanToggle(
+					Component.translatable("nocapes.cape.minecon2015"), NoCapesConfig.getInstance().minecon2015CapeShown)
+					.setDefaultValue(true)
+					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().minecon2015CapeShown = newValue)
+					.build());
+
+			mineconcapes.addEntry(entryBuilder.startBooleanToggle(
+					Component.translatable("nocapes.cape.minecon2016"), NoCapesConfig.getInstance().minecon2016CapeShown)
+					.setDefaultValue(true)
+					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().minecon2016CapeShown = newValue)
+					.build());
 
 			builder.setSavingRunnable(() -> {
 					NoCapesConfig.saveConfig();
