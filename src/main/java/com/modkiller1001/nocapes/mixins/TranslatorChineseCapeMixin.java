@@ -17,7 +17,7 @@ public abstract class TranslatorChineseCapeMixin {
             cancellable = true)
     protected void filterCapes(MinecraftProfileTexture texture, MinecraftProfileTexture.Type type, SkinManager.SkinTextureCallback callback, CallbackInfoReturnable<ResourceLocation> info) {
         if (type == MinecraftProfileTexture.Type.CAPE || type == MinecraftProfileTexture.Type.ELYTRA) {
-            if (texture.getUrl().equals("http://textures.minecraft.net/texture/2262fb1d24912209490586ecae98aca8500df3eff91f2a07da37ee524e7e3cb6") && !NoCapesConfig.translatorchineseCapeShown()) {
+            if (texture.getUrl().equals("http://textures.minecraft.net/texture/2262fb1d24912209490586ecae98aca8500df3eff91f2a07da37ee524e7e3cb6") && !NoCapesConfig.translatorChineseCapeShown()) {
                 //System.out.printf("DEBUG");
                 info.cancel();
             }

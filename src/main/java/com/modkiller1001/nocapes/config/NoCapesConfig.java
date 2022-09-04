@@ -26,14 +26,15 @@ public class NoCapesConfig {
 				minecon2013CapeShown = true,
 				minecon2015CapeShown = true,
 				minecon2016CapeShown = true,
-				mojangstudiosCapeShown = true,
+				mojangStudiosCapeShown = true,
 				mojangCapeShown = true,
-				mojangclassicCapeShown = true,
-				scrollschampCapeShown = true,
+				mojangClassicCapeShown = true,
+				scrollsChampCapeShown = true,
 				cobaltCapeShown = true,
-				mojiramoderatorCapeShown = true,
-				mapmakerCapeShown = true,
-				translatorchineseCapeShown = true,
+				mojiraModeratorCapeShown = true,
+				realmsMapmakerCapeShown = true,
+				translatorChineseCapeShown = true,
+				translatorJapaneseCapeShown = true,
 				translatorCapeShown = true;
 
 	protected static NoCapesConfig getInstance() {
@@ -167,8 +168,8 @@ public class NoCapesConfig {
 	 * This is true by default.
 	 */
 
-	public static boolean mojangstudiosCapeShown() {
-		return getInstance().mojangstudiosCapeShown;
+	public static boolean mojangStudiosCapeShown() {
+		return getInstance().mojangStudiosCapeShown;
 	}
 
 	/**
@@ -188,8 +189,8 @@ public class NoCapesConfig {
 	 * This is true by default.
 	 */
 
-	public static boolean mojangclassicCapeShown() {
-		return getInstance().mojangclassicCapeShown;
+	public static boolean mojangClassicCapeShown() {
+		return getInstance().mojangClassicCapeShown;
 	}
 
 	/**
@@ -198,8 +199,8 @@ public class NoCapesConfig {
 	 * This is true by default.
 	 */
 
-	public static boolean scrollschampCapeShown() {
-		return getInstance().scrollschampCapeShown;
+	public static boolean scrollsChampCapeShown() {
+		return getInstance().scrollsChampCapeShown;
 	}
 
 	/**
@@ -218,18 +219,18 @@ public class NoCapesConfig {
 	 * This is true by default.
 	 */
 
-	public static boolean mojiramoderatorCapeShown() {
-		return getInstance().mojiramoderatorCapeShown;
+	public static boolean mojiraModeratorCapeShown() {
+		return getInstance().mojiraModeratorCapeShown;
 	}
 
 	/**
-	 * @return True if map maker cape should be shown.
+	 * @return True if Realms Mapmaker cape should be shown.
 	 *
 	 * This is true by default.
 	 */
 
-	public static boolean mapmakerCapeShown() {
-		return getInstance().mapmakerCapeShown;
+	public static boolean realmsMapmakerCapeShown() {
+		return getInstance().realmsMapmakerCapeShown;
 	}
 
 	/**
@@ -248,7 +249,17 @@ public class NoCapesConfig {
 	 * This is true by default.
 	 */
 
-	public static boolean translatorchineseCapeShown() {
-		return getInstance().translatorchineseCapeShown;
+	public static boolean translatorChineseCapeShown() {
+		return getInstance().translatorChineseCapeShown;
+	}
+
+	/**
+	 * @return True if translator japenese cape should be shown.
+	 *
+	 * This is true by default.
+	 */
+
+	public static boolean translatorJapaneseCapeShown() {
+		return getInstance().translatorJapaneseCapeShown;
 	}
 }

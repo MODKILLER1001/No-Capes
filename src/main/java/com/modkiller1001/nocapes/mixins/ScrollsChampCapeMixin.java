@@ -17,7 +17,7 @@ public abstract class ScrollsChampCapeMixin {
             cancellable = true)
     protected void filterCapes(MinecraftProfileTexture texture, MinecraftProfileTexture.Type type, SkinManager.SkinTextureCallback callback, CallbackInfoReturnable<ResourceLocation> info) {
         if (type == MinecraftProfileTexture.Type.CAPE || type == MinecraftProfileTexture.Type.ELYTRA) {
-            if (texture.getUrl().equals("http://textures.minecraft.net/texture/3efadf6510961830f9fcc077f19b4daf286d502b5f5aafbd807c7bbffcaca245") && !NoCapesConfig.scrollschampCapeShown()) {
+            if (texture.getUrl().equals("http://textures.minecraft.net/texture/3efadf6510961830f9fcc077f19b4daf286d502b5f5aafbd807c7bbffcaca245") && !NoCapesConfig.scrollsChampCapeShown()) {
                 //System.out.printf("DEBUG");
                 info.cancel();
             }

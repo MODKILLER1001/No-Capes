@@ -17,7 +17,7 @@ public abstract class VanillaCapeMixin {
             cancellable = true)
     protected void filterCapes(MinecraftProfileTexture texture, MinecraftProfileTexture.Type type, SkinManager.SkinTextureCallback callback, CallbackInfoReturnable<ResourceLocation> info) {
         if (type == MinecraftProfileTexture.Type.CAPE || type == MinecraftProfileTexture.Type.ELYTRA) {
-            if (texture.getUrl().equals("http://textures.minecraft.net/texture/953cac8b779fe41383e675ee2b86071a71658f2180f56fbce8aa315ea70e2ed6") && !NoCapesConfig.minecon2011CapeShown()) {
+            if (texture.getUrl().equals("http://textures.minecraft.net/texture/f9a76537647989f9a0b6d001e320dac591c359e9e61a31f4ce11c88f207f0ad4") && !NoCapesConfig.vanillaCapeShown()) {
                 //System.out.printf("DEBUG");
                 info.cancel();
             }

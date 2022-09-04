@@ -79,9 +79,9 @@ public class ModMenuInt implements ModMenuApi {
 			mojangcapes.addEntry(entryBuilder.startTextDescription(Component.translatable("nocapes.options.info.relog")).build());
 
 			mojangcapes.addEntry(entryBuilder.startBooleanToggle(
-					Component.translatable("nocapes.cape.mojangstudios"), NoCapesConfig.getInstance().mojangstudiosCapeShown)
+					Component.translatable("nocapes.cape.mojangStudios"), NoCapesConfig.getInstance().mojangStudiosCapeShown)
 					.setDefaultValue(true)
-					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().mojangstudiosCapeShown = newValue)
+					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().mojangStudiosCapeShown = newValue)
 					.build());
 
 			mojangcapes.addEntry(entryBuilder.startBooleanToggle(
@@ -91,9 +91,9 @@ public class ModMenuInt implements ModMenuApi {
 					.build());
 
 			mojangcapes.addEntry(entryBuilder.startBooleanToggle(
-					Component.translatable("nocapes.cape.mojangclassic"), NoCapesConfig.getInstance().mojangclassicCapeShown)
+					Component.translatable("nocapes.cape.mojangClassic"), NoCapesConfig.getInstance().mojangClassicCapeShown)
 					.setDefaultValue(true)
-					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().mojangclassicCapeShown = newValue)
+					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().mojangClassicCapeShown = newValue)
 					.build());
 
 			//REWARD CAPES SECTION
@@ -103,9 +103,9 @@ public class ModMenuInt implements ModMenuApi {
 			rewardcapes.addEntry(entryBuilder.startTextDescription(Component.translatable("nocapes.options.info.relog")).build());
 
 			rewardcapes.addEntry(entryBuilder.startBooleanToggle(
-					Component.translatable("nocapes.cape.scrollschamp"), NoCapesConfig.getInstance().scrollschampCapeShown)
+					Component.translatable("nocapes.cape.scrollsChamp"), NoCapesConfig.getInstance().scrollsChampCapeShown)
 					.setDefaultValue(true)
-					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().scrollschampCapeShown = newValue)
+					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().scrollsChampCapeShown = newValue)
 					.build());
 
 			rewardcapes.addEntry(entryBuilder.startBooleanToggle(
@@ -115,15 +115,15 @@ public class ModMenuInt implements ModMenuApi {
 					.build());
 
 			rewardcapes.addEntry(entryBuilder.startBooleanToggle(
-					Component.translatable("nocapes.cape.mojiramoderator"), NoCapesConfig.getInstance().mojiramoderatorCapeShown)
+					Component.translatable("nocapes.cape.mojiraModerator"), NoCapesConfig.getInstance().mojiraModeratorCapeShown)
 					.setDefaultValue(true)
-					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().mojiramoderatorCapeShown = newValue)
+					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().mojiraModeratorCapeShown = newValue)
 					.build());
 
 			rewardcapes.addEntry(entryBuilder.startBooleanToggle(
-					Component.translatable("nocapes.cape.mapmaker"), NoCapesConfig.getInstance().mapmakerCapeShown)
+					Component.translatable("nocapes.cape.realmsMapmaker"), NoCapesConfig.getInstance().realmsMapmakerCapeShown)
 					.setDefaultValue(true)
-					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().mapmakerCapeShown = newValue)
+					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().realmsMapmakerCapeShown = newValue)
 					.build());
 
 			rewardcapes.addEntry(entryBuilder.startBooleanToggle(
@@ -133,9 +133,15 @@ public class ModMenuInt implements ModMenuApi {
 					.build());
 
 			rewardcapes.addEntry(entryBuilder.startBooleanToggle(
-					Component.translatable("nocapes.cape.translatorchinese"), NoCapesConfig.getInstance().translatorchineseCapeShown)
+					Component.translatable("nocapes.cape.translatorChinese"), NoCapesConfig.getInstance().translatorChineseCapeShown)
 					.setDefaultValue(true)
-					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().translatorchineseCapeShown = newValue)
+					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().translatorChineseCapeShown = newValue)
+					.build());
+
+			rewardcapes.addEntry(entryBuilder.startBooleanToggle(
+					Component.translatable("nocapes.cape.translatorJapanese"), NoCapesConfig.getInstance().translatorJapaneseCapeShown)
+					.setDefaultValue(true)
+					.setSaveConsumer(newValue -> NoCapesConfig.getInstance().translatorJapaneseCapeShown = newValue)
 					.build());
 
 			builder.setSavingRunnable(() -> {

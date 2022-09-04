@@ -17,7 +17,7 @@ public abstract class MojiraModeratorCapeMixin {
             cancellable = true)
     protected void filterCapes(MinecraftProfileTexture texture, MinecraftProfileTexture.Type type, SkinManager.SkinTextureCallback callback, CallbackInfoReturnable<ResourceLocation> info) {
         if (type == MinecraftProfileTexture.Type.CAPE || type == MinecraftProfileTexture.Type.ELYTRA) {
-            if (texture.getUrl().equals("http://textures.minecraft.net/texture/ae677f7d98ac70a533713518416df4452fe5700365c09cf45d0d156ea9396551") && !NoCapesConfig.mojiramoderatorCapeShown()) {
+            if (texture.getUrl().equals("http://textures.minecraft.net/texture/ae677f7d98ac70a533713518416df4452fe5700365c09cf45d0d156ea9396551") && !NoCapesConfig.mojiraModeratorCapeShown()) {
                 //System.out.printf("DEBUG");
                 info.cancel();
             }

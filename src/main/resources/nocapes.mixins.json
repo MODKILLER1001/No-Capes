@@ -19,9 +19,10 @@
     "ScrollsChampCapeMixin",
     "CobaltCapeMixin",
     "MojiraModeratorCapeMixin",
-    "MapMakerCapeMixin",
+    "RealmsMapmakerCapeMixin",
     "TranslatorCapeMixin",
-    "TranslatorChineseCapeMixin"
+    "TranslatorChineseCapeMixin",
+    "TranslatorJapaneseCapeMixin"
   ],
   "injectors": {
     "defaultRequire": 1

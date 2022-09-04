@@ -17,7 +17,7 @@ public abstract class MojangStudiosCapeMixin {
             cancellable = true)
     protected void filterCapes(MinecraftProfileTexture texture, MinecraftProfileTexture.Type type, SkinManager.SkinTextureCallback callback, CallbackInfoReturnable<ResourceLocation> info) {
         if (type == MinecraftProfileTexture.Type.CAPE || type == MinecraftProfileTexture.Type.ELYTRA) {
-            if (texture.getUrl().equals("http://textures.minecraft.net/texture/9e507afc56359978a3eb3e32367042b853cddd0995d17d0da995662913fb00f7") && !NoCapesConfig.mojangstudiosCapeShown()) {
+            if (texture.getUrl().equals("http://textures.minecraft.net/texture/9e507afc56359978a3eb3e32367042b853cddd0995d17d0da995662913fb00f7") && !NoCapesConfig.mojangStudiosCapeShown()) {
                 //System.out.printf("DEBUG");
                 info.cancel();
             }
