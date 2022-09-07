@@ -6,23 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "MigratorCapeMixin",
-    "VanillaCapeMixin",
-    "Minecon2011CapeMixin",
-    "Minecon2012CapeMixin",
-    "Minecon2013CapeMixin",
-    "Minecon2015CapeMixin",
-    "Minecon2016CapeMixin",
-    "MojangStudiosCapeMixin",
-    "MojangCapeMixin",
-    "MojangClassicCapeMixin",
-    "ScrollsChampCapeMixin",
-    "CobaltCapeMixin",
-    "MojiraModeratorCapeMixin",
-    "RealmsMapmakerCapeMixin",
-    "TranslatorCapeMixin",
-    "TranslatorChineseCapeMixin",
-    "TranslatorJapaneseCapeMixin"
+    "CapeLayerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
