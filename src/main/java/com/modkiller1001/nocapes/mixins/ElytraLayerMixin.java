@@ -20,8 +20,7 @@ public class ElytraLayerMixin {
     private static ResourceLocation WINGS_LOCATION;
 
     @Redirect(method = "render(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/LivingEntity;FFFFFF)V",
-            at = @At(value = "INVOKE",
-            target = "Lnet/minecraft/client/player/AbstractClientPlayer;getElytraTextureLocation()Lnet/minecraft/resources/ResourceLocation;"))
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/client/player/AbstractClientPlayer;getElytraTextureLocation()Lnet/minecraft/resources/ResourceLocation;"))
     private ResourceLocation getElytraTextureLocation(AbstractClientPlayer abstractClientPlayer) {
         String capeUrl = NoCapes.getCapeURL(abstractClientPlayer.getGameProfile());
         if (!NoCapes.shouldRenderCape(capeUrl)) {
@@ -32,8 +31,7 @@ public class ElytraLayerMixin {
     }
 
     @Redirect(method = "render(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/LivingEntity;FFFFFF)V",
-            at = @At(value = "INVOKE",
-                    target = "Lnet/minecraft/client/player/AbstractClientPlayer;getCloakTextureLocation()Lnet/minecraft/resources/ResourceLocation;"))
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/client/player/AbstractClientPlayer;getCloakTextureLocation()Lnet/minecraft/resources/ResourceLocation;"))
     private ResourceLocation getCloakTextureLocation(AbstractClientPlayer abstractClientPlayer) {
         String capeUrl = NoCapes.getCapeURL(abstractClientPlayer.getGameProfile());
         if (!NoCapes.shouldRenderCape(capeUrl)) {
