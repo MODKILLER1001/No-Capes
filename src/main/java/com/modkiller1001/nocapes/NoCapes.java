@@ -60,7 +60,7 @@ public class NoCapes implements ModInitializer {
 		// Check for each blacklisted cape, this could be turned into an iterable list
 		// Somewhat big switch statement
 		switch (capeUrl) {
-			// The cobalt cabe
+			// The cobalt cape
 			case "http://textures.minecraft.net/texture/ca35c56efe71ed290385f4ab5346a1826b546a54d519e6a3ff01efa01acce81" -> {
 				return NoCapesConfig.cobaltCapeShown();
 			}

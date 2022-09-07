@@ -22,8 +22,6 @@ public class ModMenuInt implements ModMenuApi {
 
 			ConfigCategory freecapes = builder.getOrCreateCategory(Component.translatable("nocapes.options.category.freecapes"));
 
-			freecapes.addEntry(entryBuilder.startTextDescription(Component.translatable("nocapes.options.info.relog")).build());
-
 			freecapes.addEntry(entryBuilder.startBooleanToggle(
 					Component.translatable("nocapes.cape.vanilla"), NoCapesConfig.getInstance().vanillaCapeShown)
 					.setDefaultValue(true)
@@ -39,8 +37,6 @@ public class ModMenuInt implements ModMenuApi {
 			//MINECON CAPES SECTION
 
 			ConfigCategory mineconcapes = builder.getOrCreateCategory(Component.translatable("nocapes.options.category.mineconcapes"));
-
-			mineconcapes.addEntry(entryBuilder.startTextDescription(Component.translatable("nocapes.options.info.relog")).build());
 
 			mineconcapes.addEntry(entryBuilder.startBooleanToggle(
 					Component.translatable("nocapes.cape.minecon2011"), NoCapesConfig.getInstance().minecon2011CapeShown)
@@ -76,8 +72,6 @@ public class ModMenuInt implements ModMenuApi {
 
 			ConfigCategory mojangcapes = builder.getOrCreateCategory(Component.translatable("nocapes.options.category.mojangcapes"));
 
-			mojangcapes.addEntry(entryBuilder.startTextDescription(Component.translatable("nocapes.options.info.relog")).build());
-
 			mojangcapes.addEntry(entryBuilder.startBooleanToggle(
 					Component.translatable("nocapes.cape.mojangStudios"), NoCapesConfig.getInstance().mojangStudiosCapeShown)
 					.setDefaultValue(true)
@@ -99,8 +93,6 @@ public class ModMenuInt implements ModMenuApi {
 			//REWARD CAPES SECTION
 
 			ConfigCategory rewardcapes = builder.getOrCreateCategory(Component.translatable("nocapes.options.category.rewardcapes"));
-
-			rewardcapes.addEntry(entryBuilder.startTextDescription(Component.translatable("nocapes.options.info.relog")).build());
 
 			rewardcapes.addEntry(entryBuilder.startBooleanToggle(
 					Component.translatable("nocapes.cape.scrollsChamp"), NoCapesConfig.getInstance().scrollsChampCapeShown)
